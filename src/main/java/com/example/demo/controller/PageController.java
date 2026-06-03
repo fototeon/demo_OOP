@@ -32,7 +32,7 @@ public class PageController {
     @GetMapping("/contacts")
     public String contacts(Model model) {
         model.addAttribute("pageTitle", "Контакты поддержки");
-        model.addAttribute("supportEmail", "support@helpdesk.local");
+        model.addAttribute("supportEmail", "support@demo.local");
         model.addAttribute("workTime", "Пн-Пт, 09:00-18:00");
         model.addAttribute("phone", "+7 (000) 000-00-00");
         return "contacts";
