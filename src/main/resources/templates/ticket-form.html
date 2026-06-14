@@ -18,6 +18,7 @@
             <a class="nav-link" th:href="@{/contacts}">Контакты</a>
             <a class="nav-link" th:href="@{/tickets/new}">Создать заявку</a>
             <a class="nav-link" th:href="@{/admin/tickets}">Админ-панель</a>
+            <a class="nav-link" th:href="@{/faq}">FAQ</a>
         </div>
     </div>
 </nav>
@@ -70,8 +71,8 @@
                             <button type="submit" class="btn btn-primary">
                                 Отправить заявку
                             </button>
-                            <a th:href="@{/tickets}" class="btn btn-outline-secondary">
-                                Назад к списку
+                            <a class="btn btn-outline-primary" th:href="@{/}">
+                                Вернуться на главную
                             </a>
                         </div>
                     </form>
