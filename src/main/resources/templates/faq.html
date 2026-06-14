@@ -33,26 +33,23 @@
         <div class="card-body">
             <table class="table table-striped align-middle mb-0">
                 <tbody>
-                <tr>
-                    <th scope="row">Email</th>
-                    <td th:text="${supportEmail}">support@example.com</td>
-                </tr>
-                <tr>
-                    <th scope="row">Телефон</th>
-                    <td th:text="${phone}">+7 (000) 000-00-00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Время работы</th>
-                    <td th:text="${workTime}">Пн-Пт, 09:00-18:00</td>
-                </tr>
+                <h1>Частые вопросы</h1>
+
+                <ul>
+                    <li>
+                        <strong>Как связаться с поддержкой?</strong><br>
+                        Создать заявкую
+                    </li>
+                    <li>
+                        <strong>Сколько времени рассматривается обращение?</strong><br>
+                        Обычно в течение 1–2 рабочих дней.
+                    </li>
+                </ul>
+
                 </tbody>
             </table>
         </div>
     </div>
-
-    <a class="btn btn-outline-primary" th:href="@{/tickets/new}">
-        Создать заявку
-    </a>
 
     <a class="btn btn-outline-primary" th:href="@{/}">
         Вернуться на главную

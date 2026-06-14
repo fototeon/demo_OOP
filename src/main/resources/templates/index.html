@@ -13,12 +13,16 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand fw-bold" th:href="@{/}">Help Desk</a>
+        <img th:src="@{/images/logo.png}"
+             alt="Логотип"
+             width="150">
         <div class="navbar-nav">
             <a class="nav-link" th:href="@{/}">Главная</a>
             <a class="nav-link active" th:href="@{/about}">О нас</a>
             <a class="nav-link" th:href="@{/contacts}">Контакты</a>
             <a class="nav-link" th:href="@{/tickets/new}">Создать заявку</a>
             <a class="nav-link" th:href="@{/admin/tickets}">Админ-панель</a>
+            <a class="nav-link" th:href="@{/faq}">FAQ</a>
         </div>
     </div>
 </nav>
@@ -52,6 +56,14 @@
         </div>
     </section>
 </main>
+
+<div class="hero-card p-5 rounded-4 border shadow-sm">
+    <h3>База знаний</h3>
+    <p>Ответы на популярные вопросы пользователей.</p>
+    <a th:href="@{/faq}" class="btn btn-primary btn-lg">
+        FAQ
+    </a>
+</div>
 
 <footer class="footer py-4 border-top">
     <div class="container text-center text-muted">

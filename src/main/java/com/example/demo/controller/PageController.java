@@ -37,4 +37,8 @@ public class PageController {
         model.addAttribute("phone", "+7 (000) 000-00-00");
         return "contacts";
     }
+    @GetMapping("/faq")
+    public String faq() {
+        return "faq";
+    }
 }
